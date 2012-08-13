@@ -6,12 +6,6 @@ $.fn.mitchslide = function(options) {
 	var marker_width;
 	var slide_track = 1;
 
-	var images = [
-		"http://dl.dropbox.com/u/515046/www/outside.jpg",
-		"http://dl.dropbox.com/u/515046/www/garfield-interior.jpg",
-		"http://dl.dropbox.com/u/515046/www/cheers.jpg"
-	];
-
 	var defaults = {
 		speed: 600,
 		delay: 5000,
@@ -19,12 +13,12 @@ $.fn.mitchslide = function(options) {
 		anystretch: true
 	};
 	var options = $.extend(defaults, options);
-	return this.each(function() {  
+	return this.each(function() {
 		var element = $(this);
 		// Construct slider structure
 		element.children().addClass('slide');
 		element.addClass('slider');
-		
+
 		element.wrapInner('<div class="wrap"/>');
 
 

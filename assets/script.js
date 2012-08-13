@@ -4,9 +4,9 @@ $(function(){
 		"http://dl.dropbox.com/u/515046/www/garfield-interior.jpg",
 		"http://dl.dropbox.com/u/515046/www/cheers.jpg"
 	];
-	$('figure:nth-of-type(3n)').anystretch(images[0], {speed: 150});
-	$('figure:nth-of-type(3n+1)').anystretch(images[1], {speed: 150});
-	$('figure:nth-of-type(3n+2)').anystretch(images[2], {speed: 150});
+	$('figure:nth-of-type(3n+1)').anystretch(images[0], {speed: 150});
+	$('figure:nth-of-type(3n+2)').anystretch(images[1], {speed: 150});
+	$('figure:nth-of-type(3n+3)').anystretch(images[2], {speed: 150});
 
 	$('#slide-1').mitchslide({
 		speed: 1000,

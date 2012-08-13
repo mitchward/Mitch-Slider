@@ -9,6 +9,30 @@
 	</head>
 	<body>
 		<h1>Mitch's Slider</h1>
+		<h3>Basic Markup</h3>
+		<pre>
+			// HTML
+			&lt;div id="slider"&gt;
+				&lt;figure&gt;
+					&lt;img src="" alt=""&gt;
+				&lt;/figure&gt;
+				&lt;figure&gt;
+					&lt;img src="" alt=""&gt;
+				&lt;/figure&gt;
+				&lt;figure&gt;
+					&lt;img src="" alt=""&gt;
+				&lt;/figure&gt;
+			&lt;/div&gt;
+
+			// JS
+			$('#slider').mitchslide({
+				// Defaults
+				speed: 600,
+				delay: 5000,
+				progress: true
+			});
+
+		</pre>
 		<div id="slide-1">
 			<figure>
 				<figcaption><h2>Welcome</h2><h4>To our website...</h4></figcaption>
@@ -23,6 +47,13 @@
 				<figcaption><h2>This</h2><h4>is a slider...</h4></figcaption>
 			</figure>
 		</div>
+		<pre>
+			$('#slide-1').mitchslide({
+				speed: 1000,
+				delay: 5000,
+				progress: true
+			});
+		</pre>
 		<br><br>
 
 		<div id="slide-2">
@@ -39,5 +70,13 @@
 				<figcaption><h2>This</h2><h4>is a slider...</h4></figcaption>
 			</figure>
 		</div>
+
+		<pre>
+			$('#slide-2').mitchslide({
+				speed: 500,
+				delay: 2000,
+				progress: false
+			});
+		</pre>
 	</body>
 </html>
