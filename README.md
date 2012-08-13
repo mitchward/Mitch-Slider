@@ -2,4 +2,4 @@ Personal project to develop my jQuery and git skills, which will be constantly b
 
 Uses [danmillar's anystretch](https://github.com/danmillar/jquery-anystretch), they rest is written by myself.
 
-A demo can be seen [here](http://mitchward.co.uk/demos/slider/)
+A demo can be seen [here](http://mitchward.co.uk/demos/slider/).
