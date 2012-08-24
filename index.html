@@ -4,7 +4,7 @@
 		<link rel="stylesheet" href="assets/style.css">
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<script type="text/javascript" src="assets/jquery.anystretch.min.js"></script>
-		<script type="text/javascript" src="assets/mitchslide.js"></script>
+		<script type="text/javascript" src="assets/mitchslide.min.js"></script>
 		<script type="text/javascript" src="assets/script.js"></script>
 	</head>
 	<body>
@@ -25,7 +25,7 @@
 			&lt;/div&gt;
 
 			// JS
-			$('#slider').mitchslide({
+			$('.main-slider').mitchslide({
 				// Defaults
 				speed: 600,
 				delay: 5000,
@@ -33,50 +33,16 @@
 			});
 
 		</pre>
-		<div id="slide-1">
+		<div class="main-slider">
 			<figure>
-				<figcaption><h2>Welcome</h2><h4>To our website...</h4></figcaption>
+				<img src="http://dl.dropbox.com/u/515046/www/cheers.jpg" alt="">
 			</figure>
 			<figure>
-				<figcaption><h2>This</h2><h4>is a slider...</h4></figcaption>
+				<img src="http://dl.dropbox.com/u/515046/www/garfield-interior.jpg" alt="">
 			</figure>
 			<figure>
-				<figcaption><h2>Thanks</h2><h4>for taking a look...</h4></figcaption>
-			</figure>
-			<figure>
-				<figcaption><h2>This</h2><h4>is a slider...</h4></figcaption>
+				<img src="http://dl.dropbox.com/u/515046/www/outside.jpg" alt="">
 			</figure>
 		</div>
-		<pre>
-			$('#slide-1').mitchslide({
-				speed: 1000,
-				delay: 5000,
-				progress: true
-			});
-		</pre>
-		<br><br>
-
-		<div id="slide-2">
-			<figure>
-				<figcaption><h2>Welcome</h2><h4>To our website...</h4></figcaption>
-			</figure>
-			<figure>
-				<figcaption><h2>This</h2><h4>is a slider...</h4></figcaption>
-			</figure>
-			<figure>
-				<figcaption><h2>Thanks</h2><h4>for taking a look...</h4></figcaption>
-			</figure>
-			<figure>
-				<figcaption><h2>This</h2><h4>is a slider...</h4></figcaption>
-			</figure>
-		</div>
-
-		<pre>
-			$('#slide-2').mitchslide({
-				speed: 500,
-				delay: 2000,
-				progress: false
-			});
-		</pre>
 	</body>
 </html>

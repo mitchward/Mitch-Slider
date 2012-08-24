@@ -5,12 +5,13 @@ $.fn.mitchslide = function(options) {
 	var wrap_width;
 	var marker_width;
 	var slide_track = 1;
+	var this_img;
+	var img_src;
 
 	var defaults = {
 		speed: 600,
 		delay: 5000,
-		progress: true,
-		anystretch: true
+		progress: true
 	};
 	var options = $.extend(defaults, options);
 	return this.each(function() {
@@ -18,9 +19,15 @@ $.fn.mitchslide = function(options) {
 		// Construct slider structure
 		element.children().addClass('slide');
 		element.addClass('slider');
-
 		element.wrapInner('<div class="wrap"/>');
 
+		// Make images anystretch
+		element.children().children('.slide').each(function(){
+			this_img = $(this).children('img');
+			img_src = this_img.attr('src');
+			$(this).anystretch(img_src);
+			this_img.remove();
+		});
 
 		// Add progress marker
 		if (options.progress == true) {
@@ -34,7 +41,9 @@ $.fn.mitchslide = function(options) {
 			wrap_width = slide_width * slide_count;
 			marker_width = slide_width / slide_count;
 			element.find('.slide').width(slide_width);
-			element.find('.wrap').width(wrap_width);
+			if (options.progress == true) {
+				element.find('.wrap').width(wrap_width);
+			}
 			element.find('.marker').width(marker_width);
 		};
 		config_sizes();
