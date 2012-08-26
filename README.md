@@ -2,4 +2,4 @@ Personal project to develop my jQuery skills, which will be constantly built upo
 
 Uses [danmillar's anystretch](https://github.com/danmillar/jquery-anystretch), the rest is written by myself.
 
-A demo can be seen [here](http://mitchward.co.uk/plugins/facebook-gallery/).
+A demo can be seen [here](http://mitchward.co.uk/plugins/slider/).
